@@ -581,6 +581,7 @@ class WP_Job_Manager_Shortcodes {
 					// Filters + cats.
 					'show_filters'              => true,
 					'show_categories'           => true,
+                    'show_more_job'             => true,
 					'show_category_multiselect' => get_option( 'job_manager_enable_default_category_multiselect', false ),
 					'show_pagination'           => 'pagination' === get_option( 'job_manager_job_listing_pagination_type' ) ? true : false,
 					'show_more'                 => 'load_more' === get_option( 'job_manager_job_listing_pagination_type' ) ? true : false,
@@ -744,7 +745,7 @@ class WP_Job_Manager_Shortcodes {
 						// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Template output.
 						echo get_job_listing_pagination( $jobs->max_num_pages );
 					} else {
-						echo '<a class="load_more_jobs" href="#"><strong>' . esc_html__( 'Load more listings', 'wp-job-manager' ) . '</strong></a>';
+						echo '<a class="load_more_jobs" href="#"><strong>' . esc_html__( 'View more job', 'wp-job-manager' ) . '</strong></a>';
 					}
 				}
 			} else {
