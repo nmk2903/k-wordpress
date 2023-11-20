@@ -8248,3 +8248,51 @@ RESPONSIVE STYLESHEET
   justify-content: center!important;
 }
 
+/*module4*/
+.page .row .job_listings .job_listings {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page .row div.job_listings article {
+  width: 48%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 2.5%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.page .row div.job_listings article:nth-child(2n) {
+  margin-right: 0;
+}
+
+noscript ~ .job_listings .job_listing .entry-title a{
+  font-size: 18px;
+}
+noscript ~ .job_listings .job_listing .entry-title{
+  margin-bottom: 5px;
+}
+noscript ~ .job_listings .job_listing .job-date{
+  font-size: 10px;
+}
+noscript ~ .job_listings .job_listing .job-infor-other{
+  font-size: 14px;
+  padding: 3px;
+}
+noscript ~ .job_listings .job_listing .col-md-3{
+  padding: 0;
+}
+noscript ~ .job_listings .job_listing .job-content{
+  display: block;
+}
+noscript ~ .job_listings .row{
+  margin-bottom: 0;
+}
