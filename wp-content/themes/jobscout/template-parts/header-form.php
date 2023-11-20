@@ -14,9 +14,9 @@ $post_slug       = get_post_field('post_name', $find_a_job_link);
 $ed_job_category = get_option('job_manager_enable_categories');
 
 if ($post_slug) {
-  $action_page =  home_url('/' . $post_slug);
+    $action_page =  home_url('/' . $post_slug);
 } else {
-  $action_page =  home_url('/');
+    $action_page =  home_url('/');
 }
 ?>
 
@@ -33,12 +33,23 @@ if ($post_slug) {
                     placeholder="Search for jobs, companies, skills">
             </div>
 
+
             <div class="search_location">
-                <label for="search_location"><?php esc_html_e('Location', 'jobscout'); ?></label>
+                <?php
+                global $wpdb;
+                $table  = $wpdb->prefix . 'postmeta';
+                $sql = "SELECT DISTINCT SUBSTRING_INDEX(`meta_value`,',',-1) as location FROM `wp_postmeta` WHERE `meta_key` like '%location%' ORDER BY location";
+                $data = $wpdb->get_results($wpdb->prepare($sql));
+                ?>
                 <i class="fas fa-map-marker-alt"
                     style="position:absolute; font-size: 20px;color: orange; top: 20px; left: 20px"></i>
-                <input type="text" id="search_location" name="search_location"
-                    placeholder="<?php esc_attr_e('Location', 'jobscout'); ?>">
+                <select id="search_location" name="search_location" value="Khu vực">
+                    <option value="">Tokyo</option>
+                    <?php foreach ($data as $value) : ?>
+                    <option value="<?php echo $value->location; ?>"><?php echo $value->location; ?></option>
+                    <?php endforeach ?>
+                </select>
+
             </div>
 
             <?php if ($ed_job_category) { ?>
