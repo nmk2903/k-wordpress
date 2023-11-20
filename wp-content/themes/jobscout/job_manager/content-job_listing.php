@@ -67,7 +67,7 @@ $job_description = $job_post->post_content;
            </div>
 
        </div>
-       <div style="width: 100%; height: 100px; overflow: hidden">
+       <div style="width: 100%; height: 100px; overflow: hidden; line-height: 1">
            <?php echo wpautop($job_description); ?>
        </div>
    </div>

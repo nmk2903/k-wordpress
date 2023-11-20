@@ -8160,9 +8160,6 @@ RESPONSIVE STYLESHEET
   flex-wrap: wrap !important;
 }
 
-
-
-
 /*module2*/
 .company-logo{
   width: 100%!important;
@@ -8293,6 +8290,69 @@ noscript ~ .job_listings .job_listing .col-md-3{
 noscript ~ .job_listings .job_listing .job-content{
   display: block;
 }
-noscript ~ .job_listings .row{
+noscript ~ .job_listings .row {
   margin-bottom: 0;
+}
+/*module 3*/
+.btn-cta.btn-1{
+  background: none!important;
+  border:1px solid white!important;
+  text-decoration: none!important;
+}
+.btn-cta.btn-1:hover{
+  color: white!important;
+}
+.widget_raratheme_companion_cta_widget .raratheme-cta-container{
+  max-width: 50%;
+}
+.widget_raratheme_companion_cta_widget .widget-title{
+  text-transform: uppercase;
+}
+.raratheme-cta-container .widget-title{
+  margin-bottom: 30px!important;
+}
+.widget_raratheme_companion_cta_widget .bttk-cta-bg, .widget_raratheme_companion_cta_widget .text{
+  padding-top: 60px!important;
+  padding-bottom: 60px!important;
+}
+
+/*module4*/
+.article-section .article-wrap{
+  grid-template-columns: repeat(2, 1fr);
+}
+.post .row .col-md-6 figure.post-thumbnail{
+  margin:15px!important;
+  aspect-ratio: 1/1;
+  margin-right: 0px !important;
+}
+.article-section .article-wrap article img {
+  width: 100%;
+  aspect-ratio: 1/1 !important;
+}
+.article-section .article-wrap header.entry-header{
+  padding:0 !important;
+  padding-right: 40px!important;
+}
+.post .row .col-md-6{
+  display: flex;
+  align-items: center;
+}
+.post-decs{
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.article-section .article-wrap header.entry-header .entry-title{
+  margin-bottom: 20px;
+  line-height: 1;
+  margin-top: 0px!important;
+
+}
+.article-section .article-wrap header.entry-header .entry-title a{
+  margin-top: 0px!important;
+  color: black!important;
+}
+.col-md-6 .entry-header a{
+  color: #ea751e;
+  text-decoration: none;
 }
