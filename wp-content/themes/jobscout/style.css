@@ -8163,3 +8163,6 @@ RESPONSIVE STYLESHEET
 .site-content {
   margin-top: -30px!important;
 }
+.post .row .col-md-6 .post-thumbnail{
+    width: 100%;
+}

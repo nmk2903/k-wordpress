@@ -76,27 +76,27 @@ $job_description = $job_post->post_content;
 
 
     <!--	<figure class="company-logo">-->
-    <!--		--><?php //the_company_logo( 'thumbnail' ); 
+    <!--		--><?php //the_company_logo( 'thumbnail' );
                     ?>
     <!--	</figure>-->
     <!---->
     <!--	<div class="job-title-wrap">-->
     <!--		-->
     <!--		<h2 class="entry-title">-->
-    <!--			<a href="--><?php //the_job_permalink(); 
+    <!--			<a href="--><?php //the_job_permalink();
                                 ?>
-    <!--">--><?php //wpjm_the_job_title(); 
+    <!--">--><?php //wpjm_the_job_title();
                 ?>
     <!--</a>-->
     <!--		</h2>-->
     <!--		-->
-    <!--		--><?php //if( $company_name ){ 
+    <!--		--><?php //if( $company_name ){
                     ?>
     <!--			<div class="company-name">-->
-    <!--				--><?php //the_company_name(); 
+    <!--				--><?php //the_company_name();
                             ?>
     <!--			</div>-->
-    <!--		--><?php //} 
+    <!--		--><?php //}
                     ?>
     <!--		-->
     <!--		<div class="entry-meta">-->
@@ -109,38 +109,38 @@ $job_description = $job_post->post_content;
                         //                        <span class="salary">'. esc_html( $job_salary ) .'</span>
                         //                    </div>';
                         //                }
-                        //			
+                        //
                         ?>
     <!--			<div class="company-address">-->
     <!--				<i class="fas fa-map-marker-alt"></i>-->
-    <!--				--><?php //the_job_location( true ); 
+    <!--				--><?php //the_job_location( true );
                             ?>
     <!--			</div>-->
     <!--			-->
     <!--			--><?php //
                         //				if ( get_option( 'job_manager_enable_types' ) ) {
                         //					$types = wpjm_get_the_job_types();
-                        //					if ( ! empty( $types ) ) : foreach ( $types as $jobtype ) : 
+                        //					if ( ! empty( $types ) ) : foreach ( $types as $jobtype ) :
                         ?>
-    <!--						<li class="job-type --><?php //echo esc_attr( sanitize_title( $jobtype->slug ) ); 
+    <!--						<li class="job-type --><?php //echo esc_attr( sanitize_title( $jobtype->slug ) );
                                                         ?>
-    <!--">--><?php //echo esc_html( $jobtype->name ); 
+    <!--">--><?php //echo esc_html( $jobtype->name );
                 ?>
     <!--</li>-->
     <!--					--><?php //endforeach; endif;
                                 //				}
                                 //				do_action( 'job_listing_meta_end' );
-                                //			
+                                //
                                 ?>
     <!--		</div>		-->
     <!--	</div>-->
     <!---->
-    <!--	--><?php //if( $job_featured ){ 
+    <!--	--><?php //if( $job_featured ){
                 ?>
-    <!--		<div class="featured-label">--><?php //esc_html_e( 'Featured', 'jobscout' ); 
+    <!--		<div class="featured-label">--><?php //esc_html_e( 'Featured', 'jobscout' );
                                                 ?>
     <!--</div>-->
-    <!--	--><?php //} 
+    <!--	--><?php //}
                 ?>
 
 </article>
