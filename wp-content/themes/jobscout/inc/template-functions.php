@@ -199,7 +199,7 @@ function jobscout_content_start(){
                 }
             } 
         ?>
-        <div class="container">
+        <div class="containner-fuild">
         <?php 
     }
 }
@@ -289,8 +289,9 @@ if( ! function_exists( 'jobscout_entry_content' ) ) :
 /**
  * Entry Content
 */
-function jobscout_entry_content(){ 
+function jobscout_entry_content(){
     $ed_excerpt = get_theme_mod( 'ed_excerpt', true ); ?>
+    <div class="container">
     <div class="row" itemprop="text">
 		<?php
 			if( is_singular() || ! $ed_excerpt || ( get_post_format() != false ) ){
@@ -303,6 +304,7 @@ function jobscout_entry_content(){
                 the_excerpt();
             }
 		?>
+    </div>
 	</div><!-- .entry-content -->
     <?php
 }
