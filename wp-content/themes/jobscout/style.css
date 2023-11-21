@@ -8166,3 +8166,7 @@ RESPONSIVE STYLESHEET
 .post .row .col-md-6 .post-thumbnail{
     width: 100%;
 }
+#primary{
+  width: 100%!important;
+  padding-right: 0!important;
+}
